@@ -1,10 +1,10 @@
-\# Telecom Customer Churn Analysis
+# Telecom Customer Churn Analysis
 
 
 
-\## Project Overview
+## Project Overview
 
-This project analyzes customer churn for a telecom company using a dataset of 10,000 customers across 12 months (2023). The goal is to identify \*\*why customers leave, which segments are most at risk, and what actions the business can take to reduce, churn and protect revenue.\*\*
+This project analyzes customer churn for a telecom company using a dataset of 10,000 customers across 12 months (2023). The goal is to identify **why customers leave, which segments are most at risk, and what actions the business can take to reduce, churn and protect revenue.**
 
 
 
@@ -12,27 +12,27 @@ This is an end-to-end business analysis project covering data quality audit, SQL
 
 
 
-\---
+---
 
 
 
-\## Business Problem
+## Business Problem
 
 Customer churn is one of the most expensive problems in telecom. Acquiring a new customer costs up to 5x more than retaining an existing one. This analysis answers three core questions:
 
-1\. What is our current rate and what is the revenue impact?
+1. What is our current rate and what is the revenue impact?
 
-2\. Which customer segment are churning the most?
+2. Which customer segment are churning the most?
 
-3\. Who are the high-risk customers we should target for retention?
-
-
-
-\---
+3. Who are the high-risk customers we should target for retention?
 
 
 
-\## Tools \& Technologies
+---
+
+
+
+## Tools & Technologies
 
 |Tool|Purpose|
 |-|-|
@@ -42,19 +42,19 @@ Customer churn is one of the most expensive problems in telecom. Acquiring a new
 
 
 
-\## Dataset
+## Dataset
 
-* \*\*Source:\*\* Kaggle - Telecom Customer Churn \& Data Quality Challenge
-* \*\*Size:\*\* 10,000 customers, 120,000 rows (12 months of usage of data per customer)
-* \*\*Files:\*\* 'customer\_info.csv', 'usage\_data.csv', 'churn\_labels.csv'
-
-
-
-\---
+* **Source:** [Kaggle - Telecom Customer Churn & Data Quality Challenge](https://www.kaggle.com/competitions/telecom-customer-churn-data-quality-challenge)
+* **Size:** 10,000 customers, 120,000 rows (12 months of usage of data per customer)
+* **Files:** 'customer_info.csv', 'usage_data.csv', 'churn_labels.csv'
 
 
 
-\## Data Quality Issues Found \& Fixed 
+---
+
+
+
+## Data Quality Issues Found & Fixed 
 
 During the audit phase, 4 categories of data issues were identified and resolved:
 
@@ -67,23 +67,23 @@ During the audit phase, 4 categories of data issues were identified and resolved
 
 
 
-\---
+---
 
 
 
-\# Key Figures
+# Key Figures
 
 
 
-\### 1. Overall Churn Rate
+### 1. Overall Churn Rate
 
-* \*\*786 our of 10,000 customers churned - a 7.86% churn rate\*\*
-* Monthly revenue lost to churn: \*\*₹39,478 (\~7.74% of total revenue)\*\*
-* Annualized revenue at risk: \*\*\~₹473,736\*\*
+* **786 out of 10,000 customers churned - a 7.86% churn rate**
+* Monthly revenue lost to churn: **₹39,478 (~7.74% of total revenue)**
+* Annualized revenue at risk: **~₹473,736**
 
 
 
-\### 2. Contract Type is the Biggest Churn Driver 
+### 2. Contract Type is the Biggest Churn Driver 
 
 |Contract Type |Churn Rate |
 |-|-|
@@ -91,11 +91,11 @@ During the audit phase, 4 categories of data issues were identified and resolved
 |Prepaid|7.67% |
 |Monthly|7.56%|
 
-> \*\*Insight:\*\* Yearly contract customers churn the most - counterintuitive but suggests a contract renewal problem. Customers complete their annual term and do not renew, likely switching to competitors at the natural exit point.
+> **Insight:** Yearly contract customers churn the most - counterintuitive but suggests a contract renewal problem. Customers complete their annual term and do not renew, likely switching to competitors at the natural exit point.
 
 
 
-\### 3. New Customers are the Most Vulnerable
+### 3. New Customers are the Most Vulnerable
 
 |Tenure Band |Churn Rate|
 |-|-|
@@ -105,11 +105,11 @@ During the audit phase, 4 categories of data issues were identified and resolved
 |25-60 months|7.90%|
 |7-12 months|7.30%|
 
-> \*\*Insight:\*\* Customers in their first 6 months churn at the highest rate, pointing to an onboarding experience gap. Customers who survive past 7 months are the most loyal segment.
+> **Insight:** Customers in their first 6 months churn at the highest rate, pointing to an onboarding experience gap. Customers who survive past 7 months are the most loyal segment.
 
 
 
-\### 4. Support Ticket Volume Correlates with Churn
+### 4. Support Ticket Volume Correlates with Churn
 
 |Avg Monthly Tickets|Churn Rate |
 |-|-|
@@ -117,17 +117,17 @@ During the audit phase, 4 categories of data issues were identified and resolved
 |High (20-29)|7.80%|
 |Medium (10-19)|7.40%|
 
-> \*\*Insight:\*\* Customers raising frequent support issues are 21% more likely to churn than low-interaction customers. High support contract is an early warning signal for churn.
+> **Insight:** Customers raising frequent support issues are 21% more likely to churn than low-interaction customers. High support contract is an early warning signal for churn.
 
 
 
-\### 5. Geography is NOT a Churn Driver
+### 5. Geography is NOT a Churn Driver
 
 Churn rates are uniform across Urban (8.10%), Suburban (8.10%), Rural (7.40%) segments - ruling out geography and network quality as root causes.
 
 
 
-\### 6. Highest Risk Segments (Combined Analysis)
+### 6. Highest Risk Segments (Combined Analysis)
 
 |Contract Type|Tenure Band |Churn Rate|Revenue at Risk|
 |-|-|-|-|
@@ -137,44 +137,47 @@ Churn rates are uniform across Urban (8.10%), Suburban (8.10%), Rural (7.40%) se
 
 
 
-\---
+---
 
 
 
-\## Business Recommendations
+## Business Recommendations
 
 
 
-\*\*1. Introduce a Contract Renewal Incentive Program\*\*
+**1. Introduce a Contract Renewal Incentive Program**
 
 Target Yearly contract customers at the 10-11 month mark (before renewal) with loyalty discounts or service upgrades. This directly addresses the highest churn segment (8.82%).
 
 
 
-\*\*2. Strengthen the Onboarding Experience\*\*
+**2. Strengthen the Onboarding Experience**
 
 Customers in their first 6 months churn at 9.56%. A structured 90-day onboarding program - welcome calls, usage tips, proactive check-ins - could meaningfully reduce early churn.
 
 
 
-\*\*3. Proactive Support Intervention\*\*
+**3. Proactive Support Intervention**
 
 Flag customers averaging 30+ monthly support tickets for proactive outreach before they churn. Resolving issues before frustration peaks is significantly cheaper than acquisition.
 
 
 
-\*\*4. Prioritize Retention Budget on Prepaid 25-60 Month Segment\*\*
+**4. Prioritize Retention Budget on Prepaid 25-60 Month Segment**
 
-Despite a moderate churn rate (7.62%), this segment represents the largest revenue at risk (₹8,397/month) due to its size (2,218 customers). Even a 1% churn reduction saves \~₹1,100/month.
-
-
-
-\---
+Despite a moderate churn rate (7.62%), this segment represents the largest revenue at risk (₹8,397/month) due to its size (2,218 customers). Even a 1% churn reduction saves ~₹1,100/month.
 
 
 
-\## Data Limitations
+---
+
+
+
+## Data Limitations
 
 * The dataset contains a binary churn flag without an exact churn date, preventing month-level trend analysis. A production dataset would include churn timestamps for time-series analysis.
 * Tenure was approximated using SignupDate and a fixed reference data (Dec 31, 2023) rather than an actual contract end date.
+
+## Dashboad Preview
+<img width="1282" height="727" alt="Screenshot 2026-06-27 190443" src="https://github.com/user-attachments/assets/105997c4-0c4f-43d3-a167-a3accd34afe4" />
 
