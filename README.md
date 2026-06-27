@@ -178,6 +178,6 @@ Despite a moderate churn rate (7.62%), this segment represents the largest reven
 * The dataset contains a binary churn flag without an exact churn date, preventing month-level trend analysis. A production dataset would include churn timestamps for time-series analysis.
 * Tenure was approximated using SignupDate and a fixed reference data (Dec 31, 2023) rather than an actual contract end date.
 
-## Dashboad Preview
+## Dashboard Preview
 <img width="1282" height="727" alt="Screenshot 2026-06-27 190443" src="https://github.com/user-attachments/assets/105997c4-0c4f-43d3-a167-a3accd34afe4" />
 
