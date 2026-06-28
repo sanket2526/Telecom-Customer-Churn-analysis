@@ -20,7 +20,7 @@ This is an end-to-end business analysis project covering data quality audit, SQL
 
 Customer churn is one of the most expensive problems in telecom. Acquiring a new customer costs up to 5x more than retaining an existing one. This analysis answers three core questions:
 
-1. What is our current rate and what is the revenue impact?
+1. What is our current churn rate and what is the revenue impact?
 
 2. Which customer segment are churning the most?
 
@@ -176,7 +176,7 @@ Despite a moderate churn rate (7.62%), this segment represents the largest reven
 ## Data Limitations
 
 * The dataset contains a binary churn flag without an exact churn date, preventing month-level trend analysis. A production dataset would include churn timestamps for time-series analysis.
-* Tenure was approximated using SignupDate and a fixed reference data (Dec 31, 2023) rather than an actual contract end date.
+* Tenure was approximated using SignupDate and a fixed reference date (Dec 31, 2023) rather than an actual contract end date.
 
 ## Dashboard Preview
 <img width="1282" height="727" alt="Screenshot 2026-06-27 190443" src="https://github.com/user-attachments/assets/105997c4-0c4f-43d3-a167-a3accd34afe4" />
