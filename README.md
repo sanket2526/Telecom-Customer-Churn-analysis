@@ -179,5 +179,5 @@ Despite a moderate churn rate (7.62%), this segment represents the largest reven
 * Tenure was approximated using SignupDate and a fixed reference date (Dec 31, 2023) rather than an actual contract end date.
 
 ## Dashboard Preview
-<img width="1282" height="727" alt="Screenshot 2026-06-27 190443" src="https://github.com/user-attachments/assets/105997c4-0c4f-43d3-a167-a3accd34afe4" />
+![Telecom Churn Dashboard](images/dashboard_preview.png)
 
